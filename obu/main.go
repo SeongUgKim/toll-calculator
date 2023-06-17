@@ -46,7 +46,6 @@ func main() {
 		log.Fatal(err)
 	}
 
-	defer conn.Close()
 	for {
 		for i := 0; i < len(obuIDS); i++ {
 			lat, long := genLatLong()
